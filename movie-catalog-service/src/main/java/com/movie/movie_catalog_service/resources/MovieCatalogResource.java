@@ -16,7 +16,9 @@ public class MovieCatalogResource {
     @RequestMapping("/{userId}")
     public List<CatalogItem> getCatalog(@PathVariable("userId") String userId){
         return Collections.singletonList(
-                new CatalogItem("Dune", "Dessert king", 5)
+                new CatalogItem("Dune",
+                        "a desert planet, Arrakis, which is the only source of the valuable spice",
+                        5)
         );
     }
 }
